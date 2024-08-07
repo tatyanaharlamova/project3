@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'django_filters',
+    'django_celery_beat',
 
     'users',
     'vehicle',
@@ -155,3 +156,6 @@ CSRF_TRUSTED_ORIGINS = [
 
 CUR_API_URL = 'https://api.currencyapi.com/'
 CUR_API_KEY = 'cur_live_QVx8uCAjxoDCWhjFxIybddKWI5pppf1WPyXu6cmT'
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'

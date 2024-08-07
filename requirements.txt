@@ -8,5 +8,8 @@ djangorestframework-simplejwt==5.3.1
 drf-yasg==1.21.7
 requests==2.32.3
 setuptools==71.1.0
-
+celery==5.4.0
+eventlet==0.36.1
+redis==5.0.8
+django-celery-beat==2.6.0
 
